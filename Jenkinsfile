@@ -19,7 +19,7 @@ pipeline {
                     [
                         artifactId: 'simple-app', 
                         classifier: '', 
-                        file: '/var/lib/jenkins/workspace/nexus-pipeline/target/simple-app-3.0.0-SNAPSHOT.war', 
+                        file: '/var/lib/jenkins/workspace/nexus-pipeline/target/simple-app-3.0.0.war', 
                         type: 'war'
                     ]
                 ], 
@@ -29,7 +29,7 @@ pipeline {
                     nexusVersion: 'nexus3', 
                     protocol: 'http', 
                     repository: 'simple-app-release', 
-                    version: '3.0.0-SNAPSHOT'
+                    version: '3.0.0'
               
             }
         }
